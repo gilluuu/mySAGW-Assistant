@@ -19,8 +19,11 @@ Tested under MacOS 12.6 (Intel)
 The Excel files must have at least the following columns:
 
 SECTION
+
 MEMBER INSTITUTION
+
 FORM_ID
+
 REFERENCE NO.
 
 # What happens during execution?
