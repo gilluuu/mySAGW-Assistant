@@ -11,7 +11,6 @@ w = 0
 x = 0
 y = 0
 z = "*"
-n_hm = True
 
 # Willkommensmeldung
 print()
@@ -43,7 +42,6 @@ print("Wo soll der Output gespeichert werden?")
 path = askdirectory(title='Speicherort auswählen')
 if path == "":
     print("Kein Speicherort ausgewählt, Programm wird beendet")
-print()
 
 if a > 1:
     df = pd.DataFrame(pd.read_excel(file_path[0]))
@@ -51,13 +49,10 @@ if a > 1:
         dftemp = pd.DataFrame(pd.read_excel(element))
         frames = [df, dftemp]
         df = pd.concat(frames)
-        print(df)
-        print()
 
 else:
     for element in file_path:
         df = pd.DataFrame(pd.read_excel(element))
-print(df)
 
 # Sektion 1
 b = 1
